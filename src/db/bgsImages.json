@@ -1,0 +1,56 @@
+[
+    {
+        "01d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "02d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "03d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "04d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "09d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "10d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "11d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "13d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    },
+    {
+        "50d": { 
+            "day":"es de dia",
+            "nigth": ["es de noche"]
+        }
+    }
+]
