@@ -1,56 +1,40 @@
 [
     {
         "01d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/csD1.webp", "/images/bgs/csD2.webp"],
+            "nigth": ["/images/bgs/csN1.webp", "/images/bgs/csN2.webp", "/images/bgs/csN3.webp", "/images/bgs/csN4.webp"]
+        },
         "02d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/fCD1.webp", "/images/bgs/fCD2.webp", "/images/bgs/fCD3.webp"],
+            "nigth": ["/images/bgs/fCN1.webp", "/images/bgs/fCN2.webp", "/images/bgs/fCN3.webp"]
+        },
         "03d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/sCD1.webp", "/images/bgs/sCD2.webp", "/images/bgs/sCD3.webp"],
+            "nigth": ["/images/bgs/sCN1.webp", "/images/bgs/sCN2.webp", "/images/bgs/sCN3.webp"]
+        },
         "04d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/bCD1.webp", "/images/bgs/bCD2.webp", "/images/bgs/bCD3.webp"],
+            "nigth": ["/images/bgs/bCN1.webp","/images/bgs/bCN2.webp", "/images/bgs/bCN1.webp"]
+        },
         "09d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/showerD1.webp", "/images/bgs/showerD2.webp", "/images/bgs/showerD3.webp"],
+            "nigth": ["/images/bgs/showerN1.webp", "/images/bgs/showerN2.webp", "/images/bgs/showerN3.webp"]
+        },
         "10d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/rainD1.webp", "/images/bgs/rainD2.webp", "/images/bgs/rainD3.webp", "/images/bgs/rainD4.webp"],
+            "nigth": ["/images/bgs/rainN1.webp", "/images/bgs/rainN2.webp", "/images/bgs/rainN3.webp", "/images/bgs/rainN4.webp","/images/bgs/rainN5.webp"]
+        },
         "11d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/tsD1.webp", "/images/bgs/tsD2.webp", "/images/bgs/tsD3.webp"],
+            "nigth": ["/images/bgs/tsN1.webp", "/images/bgs/tsN2.webp", "/images/bgs/tsN3.webp"]
+        },
         "13d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
-        }
-    },
-    {
+            "day":["/images/bgs/snowD1.webp", "/images/bgs/snowD2.webp","/images/bgs/snowD3.webp"],
+            "nigth": ["/images/bgs/snowN1.webp", "/images/bgs/snowN2.webp", "/images/bgs/snowN3.webp"]
+        },
         "50d": { 
-            "day":"es de dia",
-            "nigth": ["es de noche"]
+            "day":["/images/bgs/mistD1.webp", "/images/bgs/mistD2.webp", "/images/bgs/mistD3.webp"],
+            "nigth": ["/images/bgs/mistN1.webp", "/images/bgs/mistN2.webp", "/images/bgs/mistN3.webp"]
         }
     }
 ]

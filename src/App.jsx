@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-
+import { getRandom } from './utils/random.js'
+import dbImages from "./db/bgsImages.json"
 import './App.css'
 import Weather from './components/Weather'
-import Stats from './components/Stats'
 
 function App() {
   const [weatherInfo, setWeatherInfo] = useState(null)
+
+  //console.log(dbImages[0][weatherInfo?.weather[0].icon]?.day) //Obtener pocision del json
+
 
   const success = (pos) => {
     const lat = pos.coords.latitude
@@ -24,8 +27,10 @@ function App() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(success)
   }, [])
+
+  
   return (
-    <main className='bg-gray-700 min-h-screen text-white flex justify-center items-center font-principal-font p-2'>
+    <main className='bg-[url("/images/bgs/bCD1.webp")] min-h-screen text-white flex justify-center items-center font-principal-font p-2'>
       <Weather weatherInfo={weatherInfo}/>
 
    

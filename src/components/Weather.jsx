@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import { kelvinToCelsius, kelvinToFarenheit } from '../utils/temp'
 import Stats from './Stats'
-import dbImages from "../db/bgsImages.json"
 
-const obj = {"04d": "llego el llamado al objeto"}
 
 const Weather = ({weatherInfo}) => {
     console.log(weatherInfo?.weather[0].icon)
-    console.log(obj[weatherInfo?.weather[0].icon])
     const [isCelsius, setIsCelsius] = useState(true)
 
   return (
