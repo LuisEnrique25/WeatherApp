@@ -1,40 +1,39 @@
 [
     {
-        "01d": { 
-            "day":["/images/bgs/csD1.webp", "/images/bgs/csD2.webp"],
-            "nigth": ["/images/bgs/csN1.webp", "/images/bgs/csN2.webp", "/images/bgs/csN3.webp", "/images/bgs/csN4.webp"]
-        },
-        "02d": { 
-            "day":["/images/bgs/fCD1.webp", "/images/bgs/fCD2.webp", "/images/bgs/fCD3.webp"],
-            "nigth": ["/images/bgs/fCN1.webp", "/images/bgs/fCN2.webp", "/images/bgs/fCN3.webp"]
-        },
-        "03d": { 
-            "day":["/images/bgs/sCD1.webp", "/images/bgs/sCD2.webp", "/images/bgs/sCD3.webp"],
-            "nigth": ["/images/bgs/sCN1.webp", "/images/bgs/sCN2.webp", "/images/bgs/sCN3.webp"]
-        },
-        "04d": { 
-            "day":["/images/bgs/bCD1.webp", "/images/bgs/bCD2.webp", "/images/bgs/bCD3.webp"],
-            "nigth": ["/images/bgs/bCN1.webp","/images/bgs/bCN2.webp", "/images/bgs/bCN1.webp"]
-        },
-        "09d": { 
-            "day":["/images/bgs/showerD1.webp", "/images/bgs/showerD2.webp", "/images/bgs/showerD3.webp"],
-            "nigth": ["/images/bgs/showerN1.webp", "/images/bgs/showerN2.webp", "/images/bgs/showerN3.webp"]
-        },
-        "10d": { 
-            "day":["/images/bgs/rainD1.webp", "/images/bgs/rainD2.webp", "/images/bgs/rainD3.webp", "/images/bgs/rainD4.webp"],
-            "nigth": ["/images/bgs/rainN1.webp", "/images/bgs/rainN2.webp", "/images/bgs/rainN3.webp", "/images/bgs/rainN4.webp","/images/bgs/rainN5.webp"]
-        },
-        "11d": { 
-            "day":["/images/bgs/tsD1.webp", "/images/bgs/tsD2.webp", "/images/bgs/tsD3.webp"],
-            "nigth": ["/images/bgs/tsN1.webp", "/images/bgs/tsN2.webp", "/images/bgs/tsN3.webp"]
-        },
-        "13d": { 
-            "day":["/images/bgs/snowD1.webp", "/images/bgs/snowD2.webp","/images/bgs/snowD3.webp"],
-            "nigth": ["/images/bgs/snowN1.webp", "/images/bgs/snowN2.webp", "/images/bgs/snowN3.webp"]
-        },
-        "50d": { 
-            "day":["/images/bgs/mistD1.webp", "/images/bgs/mistD2.webp", "/images/bgs/mistD3.webp"],
-            "nigth": ["/images/bgs/mistN1.webp", "/images/bgs/mistN2.webp", "/images/bgs/mistN3.webp"]
-        }
+        "01d": ["/images/bgs/csD1.webp", "/images/bgs/csD2.webp"],
+        
+        "01n":  ["/images/bgs/csN1.webp", "/images/bgs/csN2.webp", "/images/bgs/csN3.webp", "/images/bgs/csN4.webp"],
+
+        "02d": ["/images/bgs/fCD1.webp", "/images/bgs/fCD2.webp", "/images/bgs/fCD3.webp"],
+
+        "02n":  ["/images/bgs/fCN1.webp", "/images/bgs/fCN2.webp", "/images/bgs/fCN3.webp"],
+        
+        "03d": ["/images/bgs/sCD1.webp", "/images/bgs/sCD2.webp", "/images/bgs/sCD3.webp"],
+        
+        "03n":   ["/images/bgs/sCN1.webp", "/images/bgs/sCN2.webp", "/images/bgs/sCN3.webp"],
+
+        "04d": ["/images/bgs/bCD1.webp", "/images/bgs/bCD2.webp", "/images/bgs/bCD3.webp"],
+
+        "04n":  ["/images/bgs/bCN1.webp","/images/bgs/bCN2.webp", "/images/bgs/bCN1.webp"],
+
+        "09d":["/images/bgs/showerD1.webp", "/images/bgs/showerD2.webp", "/images/bgs/showerD3.webp"],
+        
+        "09n":  ["/images/bgs/showerN1.webp", "/images/bgs/showerN2.webp", "/images/bgs/showerN3.webp"],
+
+        "10d": ["/images/bgs/rainD1.webp", "/images/bgs/rainD2.webp", "/images/bgs/rainD3.webp", "/images/bgs/rainD4.webp"],
+
+        "10n":  ["/images/bgs/rainN1.webp", "/images/bgs/rainN2.webp", "/images/bgs/rainN3.webp", "/images/bgs/rainN4.webp","/images/bgs/rainN5.webp"],
+
+        "11d": ["/images/bgs/tsD1.webp", "/images/bgs/tsD2.webp", "/images/bgs/tsD3.webp"],
+
+        "11n":  ["/images/bgs/tsN1.webp", "/images/bgs/tsN2.webp", "/images/bgs/tsN3.webp"],
+
+        "13d": ["/images/bgs/snowD1.webp", "/images/bgs/snowD2.webp","/images/bgs/snowD3.webp"],
+
+        "13n":  ["/images/bgs/snowN1.webp", "/images/bgs/snowN2.webp", "/images/bgs/snowN3.webp"],
+
+        "50d":["/images/bgs/mistD1.webp", "/images/bgs/mistD2.webp", "/images/bgs/mistD3.webp"],
+
+        "50n":  ["/images/bgs/mistN1.webp", "/images/bgs/mistN2.webp", "/images/bgs/mistN3.webp"]
     }
 ]
