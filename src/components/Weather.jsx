@@ -12,7 +12,8 @@ const Weather = ({weatherInfo}) => {
 
   return (
     <section className='text-center grid gap-6 '>
-        
+
+        {/**   CIUDAD */}        
         <h2 className='font-bold text-xl sm:text-2xl'>{weatherInfo?.name}, {weatherInfo?.sys.country}</h2>
 
         <section className=' grid gap-4 sm:grid-cols-[1fr_auto]'>
@@ -32,13 +33,7 @@ const Weather = ({weatherInfo}) => {
 
             </article>
 
-
-
-
-
-
-
-
+            {/** ESTADISTICAS */}
             <section className='bg-blue-950/30  p-2 rounded-2xl grid grid-cols-3 justify-items-center sm:grid-cols-1 sm:items-center sm:justify-center sm:w-[150px] '>
 
             <Stats prop={weatherInfo?.wind.speed} stat={"wind"}/>
@@ -47,13 +42,11 @@ const Weather = ({weatherInfo}) => {
 
             </section>
 
-
+        {/**CAMBIAR DE TEMPERATURA */}
         </section>
         <div>
         <button onClick={() => setIsCelsius(!isCelsius)} className=' w-fit py-2 px-5 rounded-3xl bg-white text-blue-600 font-semibold sm:px-9 transition-all duration-100 ease-in hover:bg-blue-700 hover:text-blue-950'>{isCelsius ?"To °F":"To °C"}</button>
         </div>
-
-
 
     </section>
   )
