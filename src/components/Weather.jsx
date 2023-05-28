@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { kelvinToCelsius, kelvinToFarenheit } from '../utils/temp'
 import Stats from './Stats'
+import dbIcoBgs from "../db/bgsIcons.json"
 
 
 const Weather = ({weatherInfo}) => {
     
     const [isCelsius, setIsCelsius] = useState(true)
+
+    const icon = dbIcoBgs[0][weatherInfo?.weather[0].icon]?.icon 
 
   return (
     <section className='text-center grid gap-6 '>
@@ -23,8 +26,8 @@ const Weather = ({weatherInfo}) => {
                 <span className='text-4xl tracking-widest sm:text-[2.5rem] sm:tracking-[.15em] md:text-5xl transition-all duration-200 ease-in'>{isCelsius ? kelvinToCelsius(weatherInfo?.main.temp) : kelvinToFarenheit(weatherInfo?.main.temp)}</span>
 
                 {/* IMAGEN */}
-                <div className='flex items-center justify-center'>
-                    <img className="w-full" src={`https://openweathermap.org/img/wn/${weatherInfo?.weather[0].icon}@2x.png`} alt={weatherInfo?.weather[0].description} />
+                <div className='flex items-center justify-center transition-all duration-500 ease-in-out'>
+                    <img className="sm:w-[105px] md:w-[125px] transition-all duration-500 ease-in-out" src={icon} alt={weatherInfo?.weather[0].description} />
                 </div>
 
             </article>
