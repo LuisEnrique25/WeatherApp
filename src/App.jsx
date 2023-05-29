@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { getRandom } from './utils/random.js'
-import dbImages from "./db/bgsImages.json"
 import './App.css'
 import Weather from './components/Weather'
 import Loader from './components/Loader.jsx'
 import dbIcoBgs from "./db/bgsIcons.json"
+import SearchBar from './components/SearchBar.jsx'
 
 
 
@@ -13,18 +13,8 @@ function App() {
   const [weatherInfo, setWeatherInfo] = useState(null)
 
   {/*TODO EL LIO PARA PODER CAMBIAR DE FONDO SEGUN EL CLIMA LOCAL */}
-  console.log(weatherInfo?.weather[0].icon)
-  const icon = dbIcoBgs[0][weatherInfo?.weather[0].icon]?.icon 
-  console.log("ruta del icono " + icon)
-  const rutaad =dbImages[0][weatherInfo?.weather[0].icon]?.[getRandom(dbImages[0][weatherInfo?.weather[0].icon])]
   const bg =dbIcoBgs[0][weatherInfo?.weather[0].icon]?.bg[getRandom(dbIcoBgs[0][weatherInfo?.weather[0].icon]?.bg)]
 
-  
-  
-  
-  
-
-  //console.log(dbImages[0][weatherInfo?.weather[0].icon]?.day) //Obtener pocision del json
 
 
   const success = (pos) => {
@@ -40,6 +30,7 @@ function App() {
       .catch((err) => console.log(err))
   }
 
+
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(success)
   }, [])
@@ -51,19 +42,12 @@ function App() {
       * 
     */}
       {
-        weatherInfo ? <> <h1 className='absolute top-16'>HOLA</h1>  <Weather weatherInfo={weatherInfo} /> </>: <Loader/>
+        weatherInfo ? <> < SearchBar setWeatherInfo={setWeatherInfo}/>  <Weather weatherInfo={weatherInfo} /> </>: <Loader/>
       }
-   
-      
-    
- 
    
     </main>
   )
 }
 
 export default App
-{/**
-style={{ backgroundImage: `url(${ruta})` }}
-style={{ backgroundImage: `url(${ruta})` }} 
-*/}
+
