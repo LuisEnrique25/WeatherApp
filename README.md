@@ -11,4 +11,4 @@ Main hooks used were useState and UseEffect:
 The consumed API was provided by 'openweathermap.org' and we use axios to be able to use it.
 
 
-Project deployed by Netlify: N/A
+Project deployed by Netlify: https://weather-app-wizz.netlify.app/
