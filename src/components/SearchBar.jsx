@@ -20,8 +20,10 @@ const SearchBar = ({setWeatherInfo}) => {
 
   return (
     <form onSubmit={handleBtnForm} className='absolute top-16  flex rounded-lg overflow-hidden '>
-        <input id='cityName' type="text" className='w-36 text-black px-2 bg-white/25 border-none focus:bg-white/80'/>
-        <button className='bg-blue-700 p-[0.15rem] px-2'><i className="fa-solid fa-magnifying-glass"></i></button>
+        <input id='cityName' type="text" placeholder='City Name' required className='w-36 text-black px-2 bg-white/25  focus:bg-white/80 outline-0'/>
+        <button className='bg-blue-500 p-[0.15rem] px-2 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-500'>
+          <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
     </form>
   )
 }

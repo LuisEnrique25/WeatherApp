@@ -6,6 +6,7 @@ import Weather from './components/Weather'
 import Loader from './components/Loader.jsx'
 import dbIcoBgs from "./db/bgsIcons.json"
 import SearchBar from './components/SearchBar.jsx'
+import DarkMode from './components/DarkMode.jsx'
 
 
 
@@ -44,6 +45,7 @@ function App() {
       {
         weatherInfo ? <> < SearchBar setWeatherInfo={setWeatherInfo}/>  <Weather weatherInfo={weatherInfo} /> </>: <Loader/>
       }
+      <DarkMode/>
    
     </main>
   )

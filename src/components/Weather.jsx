@@ -11,14 +11,14 @@ const Weather = ({weatherInfo}) => {
     const icon = dbIcoBgs[0][weatherInfo?.weather[0].icon]?.icon 
 
   return (
-    <section className='text-center grid gap-6 '>
+    <section className='text-center grid gap-6  select-none text-white dark:text-slate-300'>
 
         {/**   CIUDAD */}        
         <h2 className='font-bold text-xl sm:text-2xl'>{weatherInfo?.name}, {weatherInfo?.sys.country}</h2>
 
         <section className=' grid gap-4 sm:grid-cols-[1fr_auto]'>
 
-            <article className='bg-blue-950/30 p-2 rounded-2xl grid grid-cols-2 items-center sm:p-4 transition-all duration-200 ease-linear' >
+            <article className='bg-blue-400/40  dark:bg-blue-950/30 p-2 rounded-2xl grid grid-cols-2 items-center sm:p-4 transition-all duration-200 ease-linear' >
 
                 {/* DESCRIPTION */}
                 <h3 className='col-span-2 capitalize md:text-lg'>{weatherInfo?.weather[0].description}</h3>
@@ -34,7 +34,7 @@ const Weather = ({weatherInfo}) => {
             </article>
 
             {/** ESTADISTICAS */}
-            <section className='bg-blue-950/30  p-2 rounded-2xl grid grid-cols-3 justify-items-center sm:grid-cols-1 sm:items-center sm:justify-center sm:w-[150px] '>
+            <section className='bg-blue-400/40 dark:bg-blue-950/30  p-2 rounded-2xl grid grid-cols-3 justify-items-center sm:grid-cols-1 sm:items-center sm:justify-center sm:w-[150px] '>
 
             <Stats prop={weatherInfo?.wind.speed} stat={"wind"}/>
             <Stats prop={weatherInfo?.main.humidity} stat={"humidity"}/>
@@ -45,7 +45,7 @@ const Weather = ({weatherInfo}) => {
         {/**CAMBIAR DE TEMPERATURA */}
         </section>
         <div>
-        <button onClick={() => setIsCelsius(!isCelsius)} className=' w-fit py-2 px-5 rounded-3xl bg-white text-blue-600 font-semibold sm:px-9 transition-all duration-100 ease-in hover:bg-blue-700 hover:text-blue-950'>{isCelsius ?"To °F":"To °C"}</button>
+        <button onClick={() => setIsCelsius(!isCelsius)} className=' w-fit py-2 px-5 rounded-3xl bg-white text-blue-600 font-semibold sm:px-9 transition-all duration-100 ease-in hover:bg-blue-700 hover:text-blue-950 dark:bg-blue-950 dark:text-blue-300 dark:hover:bg-blue-500 dark:hover:text-blue-950'>{isCelsius ?"To °F":"To °C"}</button>
         </div>
 
     </section>

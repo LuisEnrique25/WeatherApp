@@ -3,7 +3,7 @@ import "./loader.css"
 
 const Loader = () => {
   return (
-    <section className='absolute bg-slate-600 flex flex-col items-center justify-center min-h-screen min-w-full'>
+    <section className='absolute bg-slate-600 flex flex-col items-center justify-center min-h-screen min-w-full z-10'>
 
       <div className='loader__container'>
         <div className='p-2'>

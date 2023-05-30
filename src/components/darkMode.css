@@ -1,0 +1,35 @@
+.fa-sun{
+    animation: spin 6s infinite;    
+    animation-play-state: running;
+}
+@keyframes spin {
+    from{ 
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/**
+.fa-dice-d6{
+    animation: spin 2s infinite, color-change 4s infinite; /* spin y change-color: animaciones que hara girar el icono  y cambiar de color con la pseudo-clase hover */
+    /*como  el keyframe de color-change ya esta declara en app.css no hace falta declalara aqui pero se puede modificar su duracion
+    animation-play-state: paused; /*fuera del hover la animacion se pausa
+}
+
+@keyframes spin {
+    from{ 
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.btn__change:hover .fa-dice-d6 {
+  animation-play-state: running; /*Cuando se aplica la pseudo-clase hover, la animacion corre
+  font-size: 2.25rem;
+}
+*/
