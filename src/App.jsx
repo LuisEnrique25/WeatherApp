@@ -34,6 +34,7 @@ function App() {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(success)
+    console.log("Una disculpa profe, pero desconosco por que me sale el error de arriba, solo me sale el error en el proyecto ya desplegado.")
   }, [])
 
   
