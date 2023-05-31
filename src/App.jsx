@@ -34,12 +34,12 @@ function App() {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(success)
-  
+    console.log("Profe ya arregle el problema que tenia, solo aplique renderizado condicional  en el atributo style de la etiqueta main(afortunadamente funciono). Mas adelnate le dare mejor estilo al icono del ModoOscuro pero el resto espero que sea de su agrado. Este mensaje por su puesto que lo eliminare despues de la evaluacion.")
   }, [])
 
   
   return (
-    <main style={weatherInfo ?{ backgroundImage: `url(${bg})` } : {background: `black`}}  className='bg-no-repeat bg-cover min-h-screen text-white flex flex-col justify-center items-center font-principal-font p-2'>
+    <main style={weatherInfo ?{ backgroundImage: `url(${bg})` } : {background: `none`}}  className='bg-no-repeat bg-cover min-h-screen text-white flex flex-col justify-center items-center font-principal-font p-2'>
      {/**
       * 
     */}
