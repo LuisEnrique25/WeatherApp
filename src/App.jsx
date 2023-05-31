@@ -39,7 +39,7 @@ function App() {
 
   
   return (
-    <main style={{ backgroundImage: `url(${bg})` }}  className='bg-no-repeat bg-cover min-h-screen text-white flex flex-col justify-center items-center font-principal-font p-2'>
+    <main style={weatherInfo ?{ backgroundImage: `url(${bg})` } : {background: `black`}}  className='bg-no-repeat bg-cover min-h-screen text-white flex flex-col justify-center items-center font-principal-font p-2'>
      {/**
       * 
     */}
